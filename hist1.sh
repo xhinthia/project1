@@ -38,7 +38,7 @@ then
 			echo "Officier : Va pour les étudiants. Comment voulez-vous la jouer Capitaine ?"
 			echo ""
 			read -p "Manière professionnelle taper [1] ou manière furtive taper [2] : " rep6
-			if [ "$rep6" = "1"];
+			if [ "$rep6" = "1" ];
 			then
 				echo "Vous rejoignez le groupe, accompagné de votre coéquipier. En approchant, vous ajoutez 'Bonjour, Je suis capitaine de police et voici mon équipier. Nous enquêtons sur le mort d'Aurélie et votre aide nous serait très utile'. A mon grand étonnement, la quasi-totalité de la foule prit le large... Sauf une jeune fille, assise dans l'herbe un peu en retrait. Elle semblait sincèrement touchée par la mort d'Aurélie, du moins plus que les autres."
 				echo "A notre arrivée, elle leva la tête et partagea sa peine."
