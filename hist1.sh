@@ -1,11 +1,13 @@
 #!/bin/bash
 
 echo "Dans ce roman intéractif, vous devez prendre des décisions pour avancer dans l'histoire. Evidemment vos choix ont un impact sur son déroulement. Pour effectuer un choix il suffit de rentrer le chiffre entre crochet et appuyer sur 'entrée' par exemple pour choisir le choix [1] vous n'avez qu'à taper '1' puis appuyer sur 'entrée'."
+echo ""
 read -p "Pour continuer appuyer sur [entrée] " enter
 if [ -z "$enter" ];
 then
 	echo "Officier : Bonjour Capitaine, nous avons une nouvelle affaire. Voilà le topo :"
 	echo "Officier : Aurélie Siname, une jeune étudiante en acuponcture, a été sauvagement assassinée sur le parking de son université cette nuit."
+	echo ""
 	read -p "Pour plus de précision sur la mort brutale taper [1] ou pour continuer le topo taper [2] : " rep1
 	if [ "$rep1" = "1" ];
 	then
@@ -13,6 +15,7 @@ then
 	fi
 	echo "Officier : Le légiste a estimé l'heure de la mort entre 1h et 2h du matin mais l'incision a été faite vers 22h. Nous pouvons aussi conclure que l'assassin maîtrise parfaitement l'acuponcture."
 	echo "Vous : C'est horrible, cette gamine était prisonnière de son corps...  et s'est vidée de son sang lentement pendant plus de 3h avant de mourir..."
+	echo ""
 	read -p "J'aimerais bien savoir ce qu'elle faisait à l'université en pleine nuit, allons-y taper [1] ou pour continuer le topo taper [2] : " rep2
 	if [ "$rep2" = "1" ];
 	then
@@ -20,6 +23,7 @@ then
 	else
 		echo "Officier : La scientifique a pu récupérer le portable de la victime, Aurélie a appellé un certain Jerry Lane à 00h18 pendant 6 minutes. Le problème est qu'à cette heure, la jeune fille était paralysée sur le parking en route vers la mort..."
 		echo "Officier : Alors Capitaine, ou allons nous ?"
+		echo ""
 		read -p "A l'université taper [1] ou chez Jerry taper [2] : " rep4
 
 	fi
@@ -27,10 +31,12 @@ then
 	then
 		echo "Une fois sur place, vous apercevez un groupe d'étudiant afoulé près de la scène de crime, ils semblent très affectés. Plus loin, deux policiers interrogent le professeur qui a trouvé le corps ce matin."
 		echo "Qui voulez-vous interroger ?"
+		echo ""
 		read -p "Aller voir le groupe d'étudiant taper [1] ou aller voir le professeur taper [2] : " rep5
 		if [ "$rep5" = "1" ];
 		then
 			echo "Officier : Va pour les étudiants. Comment voulez-vous la jouer Capitaine ?"
+			echo ""
 			read -p "Manière professionnelle taper [1] ou manière furtive taper [2] : " rep6
 			if [ "$rep6" = "1"];
 			then
@@ -57,6 +63,7 @@ then
 				echo "Laura : Euh... Oui ca va, enfin normal quoi. Aurélie sortait avec lui depuis longtemps donc forcément elle m'a souvent parlé de lui..."
 				echo "Vous : Merci pour votre aide en tout cas. C'est la procédure mais je dois vous le demander. Où étiez-vous cette nuit ?"
 				echo "Laura : Quoi ?! C'est une blague ? Ce serait insulter la mémoire d'Aurélie que de vous répondre. Nous allons en rester là Capitaine. Trop bonne, trop conne elle me disait tout le temps..."
+				echo ""
 				read -p "Suivre la procédure et emmener la jeune étudiante au poste pour la calmer et confirmer son alibi taper [1] ou calmer le jeu, prendre son adresse pour terminer la conversation plus tard et la laisser rentrer chez elle taper [2] : " choix1
 				if [ "$choix1" = "1" ];
 				then
@@ -78,6 +85,7 @@ then
 				echo "Kyle : Exact, je suis en psychologie. D'ailleurs si vous avez besoin de parler de ce traumatisme..."
 				echo "Vous : Merci c'est très gentil, mais toi à qui vas-tu parler ?"
 				echo "Kyle : mhh, je me souviens du premier cours qui disait qu'un psychologue devait se forger une sorte de carapace impénétrable. Que c'était les exigences du métier, que évidemment un psy qui avait des problèmes ce n'était pas très rassurant pour le client... Pss quelle connerie. Bref, j'ai été ravi de vous rencontrer malgré les circonstances mais je dois y aller."
+				echo ""
 				read -p "Décliner votre identité et lui suggérer de venir au poste plus tard pour terminer cette conversation taper [1] ou garder votre couverture et le laisser partir taper [2] : " choix2
 				if [ "$choix2" = "1" ];
 				then
@@ -115,6 +123,7 @@ then
 			echo "Vous : Parlez moi de vous s'il vous plaît"
 			echo "Prof : Voulez-vous la description speed-dating ou la description professionnelle ?"
 			echo "Vous : Pardon...?"
+			echo ""
 			read -p "Jouer le jeu et demander la description speed-dating taper [1] ou rester professionnelle taper [2] : " choix3
 			if [ "$choix3" = "1" ];
 			then
@@ -126,6 +135,7 @@ then
 				echo "Prof : Ooh, j'adore. Je serais ravi de découvrir les limites de votre souplesse... pendant une séance d'acuponcture évidemment. Si cela vous intéresse je peux vous apprendre les bases."
 				echo "Vous : Hum... J'aimerais beaucoup me retrouver sans défense, pendant une séance d'acuponcture bien sûr. Mais j'ai la phobie d'être attachée... vous voyez. Alors peut-être, avec votre grand savoir, que vous connaissez un moyen de m'immobiliser, que je sois totalement à votre merci..."
 				echo "Prof : Ah, j'ai l'impression que nous perdons le côté agréable de cette discussion pourtant fort sympathique. Je vais devoir vous laisser Kate, d'autres affaires plus urgentes me forcent à partir."
+				echo ""
 				read -p "Mettre un coup de pression digne d'une capitaine taper [1] ou jouer le jeu jusqu'à la fin taper [2] : " choix4
 				if [ "$choix4" = "1" ];
 				then
